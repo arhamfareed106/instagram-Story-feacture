@@ -19,5 +19,11 @@ arr.forEach (function(elem,idx){
 stories.innerHTML = clutter
 
 stories.addEventListener('click', function(dets){
-    console.log(arr[dets.target.id].story)
+    document.querySelector("#full-screen").style.display = "block" 
+    document.querySelector("#full-screen").style.backgroundImage = `url(${arr[dets.target.id].story})`
+
+    setTimeout(function(){
+        document.querySelector("#full-screen").style.display = "none" 
+
+    }, 3000)
 })

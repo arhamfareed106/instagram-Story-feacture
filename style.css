@@ -20,10 +20,12 @@ body{
 
 #card{
     height: 450px;
-    width: 330px;
+    width: 300px;
     background-color: white;
-    border-radius:10px ;
+    border-radius:15px;
+    overflow: hidden;
     border: 3px solid black;
+    position: relative;
 }
 
 
@@ -61,4 +63,14 @@ body{
     object-fit: cover;
     object-position: center;
 
+}
+
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
 }
